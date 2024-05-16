@@ -27,3 +27,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
+.viewPlans {
+  @apply cursor-pointer border-2 border-white px-7 py-3;
+}

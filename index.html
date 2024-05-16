@@ -15,45 +15,93 @@
   <body class="karla-400">
     <header>
       <nav>
-        <div class="flex items-center justify-between p-6">
+        <div class="flex items-center justify-between p-6 desktop:px-40">
           <img src="images/logo.svg" alt="" />
-          <img src="images/icon-hamburger.svg" alt="" />
-        </div>
-        <ul class="hidden">
-          <li>HOW WE WORK</li>
-          <li>BLOG</li>
-          <li>ACCOUNT</li>
-          <li>VIEW PLANS</li>
-        </ul>
-      </nav>
-      <div class="h-[451px] w-full">
-        <div
-          class="h-full w-full"
-          style="background-image: url(images/image-intro-mobile.jpg)"
-        ></div>
-      </div>
-      <div
-        class="relative grid h-[500px] w-full place-items-center bg-custom-dark2"
-      >
-        <div></div>
-        <div class="space-y-4 p-6 text-center text-white">
-          <h1 class="dm-serif-display-regular text-5xl tracking-tighter">
-            Humanizing your insurance.
-          </h1>
-          <p>
-            Get your life insurance coverage easier and faster. We blend our
-            expertise and technology to help you find the plan that’s right for
-            you. Ensure you and your loved ones are protected.
-          </p>
-          <div class="pt-8">
-            <a class="cursor-pointer border-2 border-white px-7 py-3" href=""
-              >VIEW PLANS</a
+          <img class="desktop:hidden" src="images/icon-hamburger.svg" alt="" />
+          <ul class="hidden items-center gap-6 text-custom-gray desktop:flex">
+            <li
+              class="hover:text-custom-dark desktop:cursor-pointer desktop:text-sm"
             >
-          </div>
+              HOW WE WORK
+            </li>
+            <li class="hover:text-custom-dark desktop:cursor-pointer">BLOG</li>
+            <li class="hover:text-custom-dark desktop:cursor-pointer">
+              ACCOUNT
+            </li>
+            <li
+              class="viewPlans karla-700 bg-custom-dark text-white desktop:cursor-pointer desktop:!border-0"
+            >
+              VIEW PLANS
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </header>
-    <main></main>
+    <main class="overflow-hidden">
+      <!-- Hero Section -->
+
+      <section class="relative grid">
+        <!-- Image Container -->
+
+        <div
+          class="desktop:top-0-28 h-[451px] w-full desktop:absolute desktop:-right-2/4 desktop:top-1/4 desktop:z-10 desktop:h-[650px]"
+        >
+          <div
+            class="h-full w-full bg-mobileImage bg-cover bg-no-repeat desktop:bg-desktopImage desktop:bg-contain"
+          ></div>
+        </div>
+
+        <!-- Image Container End -->
+
+        <!-- Background -->
+
+        <div
+          class="relative grid h-[500px] w-full place-items-center bg-custom-dark2 bg-no-repeat desktop:h-[600px] desktop:place-items-start desktop:pt-40"
+        >
+          <!-- BG Left Pattern  -->
+          <div
+            class="absolute top-0 h-full w-full bg-mobileBgPatternIntroLeft bg-no-repeat desktop:top-2/3 desktop:bg-desktopBgPatternIntroLeft"
+          ></div>
+          <!-- BG Left Pattern End -->
+          <!-- Text Container -->
+          <div
+            class="z-20 space-y-4 p-6 text-center text-white desktop:relative desktop:w-1/2 desktop:px-40 desktop:text-left"
+          >
+            <!-- Line -->
+            <div
+              class="absolute -top-12 hidden h-[1px] w-[150px] bg-white desktop:block"
+            ></div>
+            <h1
+              class="dm-serif-display-regular text-5xl tracking-tighter desktop:text-[4rem] desktop:tracking-tighter"
+            >
+              Humanizing your insurance.
+            </h1>
+            <p>
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that’s right
+              for you. Ensure you and your loved ones are protected.
+            </p>
+            <div class="pt-8">
+              <a class="viewPlans" href="">VIEW PLANS</a>
+            </div>
+          </div>
+          <!-- Text Container End -->
+          <!-- BG Pattern right -->
+          <div
+            class="absolute left-[70%] top-[22rem] h-full w-full bg-mobileBgPatternIntroRight bg-no-repeat desktop:top-0 desktop:z-10 desktop:bg-desktopBgPatternIntroRight"
+          ></div>
+          <!-- BG Pattern right End-->
+        </div>
+
+        <!-- Background End -->
+      </section>
+
+      <!-- Hero Section End -->
+
+      <section>
+        <div class="h-screen"></div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

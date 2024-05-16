@@ -9,6 +9,19 @@ module.exports = {
       desktop: "1440px",
     },
     extend: {
+      backgroundImage: {
+        mobileImage: "url(images/image-intro-mobile.jpg)",
+        desktopImage: "url(images/image-intro-desktop.jpg)",
+        mobileBgPatternIntroLeft:
+          "url(images/bg-pattern-intro-left-mobile.svg)",
+        desktopBgPatternIntroLeft:
+          "url(/images/bg-pattern-intro-left-desktop.svg)",
+
+        mobileBgPatternIntroRight:
+          "url(images/bg-pattern-intro-right-mobile.svg)",
+        desktopBgPatternIntroRight:
+          "url(images/bg-pattern-intro-right-desktop.svg)",
+      },
       colors: {
         custom: {
           dark: "rgba(44, 40, 48, 1)",
