@@ -29,7 +29,7 @@
 }
 
 .viewPlans {
-  @apply cursor-pointer border-[1px] border-white px-7 py-3;
+  @apply cursor-pointer border-[1px] border-black px-7 py-3 hover:bg-black hover:text-white;
 }
 
 .card {
@@ -39,5 +39,3 @@
 .h2Titles {
   @apply dm-serif-display-regular text-center text-4xl tracking-tight desktop:pt-16 desktop:text-start desktop:text-6xl desktop:text-[3.5rem];
 }
-
-
