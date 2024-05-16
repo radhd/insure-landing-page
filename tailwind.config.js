@@ -24,6 +24,9 @@ module.exports = {
 
         mobileHowWorkPattern: "url(images/bg-pattern-how-we-work-mobile.svg)",
         desktopHowWorkPattern: "url(images/bg-pattern-how-we-work-desktop.svg)",
+
+        mobileFooterPattern: "url(images/bg-pattern-footer-mobile.svg)",
+        desktopFooterPattern: "url(images/bg-pattern-footer-desktop.svg)",
       },
       colors: {
         custom: {

@@ -39,3 +39,5 @@
 .h2Titles {
   @apply dm-serif-display-regular text-center text-4xl tracking-tight desktop:pt-16 desktop:text-start desktop:text-6xl desktop:text-[3.5rem];
 }
+
+
