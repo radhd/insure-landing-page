@@ -21,6 +21,9 @@ module.exports = {
           "url(images/bg-pattern-intro-right-mobile.svg)",
         desktopBgPatternIntroRight:
           "url(images/bg-pattern-intro-right-desktop.svg)",
+
+        mobileHowWorkPattern: "url(images/bg-pattern-how-we-work-mobile.svg)",
+        desktopHowWorkPattern: "url(images/bg-pattern-how-we-work-desktop.svg)",
       },
       colors: {
         custom: {

@@ -566,6 +566,10 @@ video {
   top: -3rem;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 .left-\[70\%\] {
   left: 70%;
 }
@@ -671,12 +675,6 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -707,8 +705,16 @@ video {
   background-image: url(images/bg-pattern-intro-right-mobile.svg);
 }
 
+.bg-mobileHowWorkPattern {
+  background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+}
+
 .bg-mobileImage {
   background-image: url(images/image-intro-mobile.jpg);
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-cover {
@@ -726,6 +732,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pt-8 {
@@ -786,7 +797,7 @@ video {
 
 .viewPlans {
   cursor: pointer;
-  border-width: 2px;
+  border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   padding-left: 1.75rem;
@@ -814,6 +825,25 @@ video {
   .card {
     place-items: start;
     text-align: start;
+  }
+}
+
+.h2Titles {
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.025em;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width: 1440px) {
+  .h2Titles {
+    padding-top: 4rem;
+    text-align: start;
+    line-height: 1;
+    font-size: 3.5rem;
   }
 }
 
@@ -854,10 +884,6 @@ video {
     margin: 0px;
   }
 
-  .desktop\:ml-auto {
-    margin-left: auto;
-  }
-
   .desktop\:block {
     display: block;
   }
@@ -882,28 +908,12 @@ video {
     height: 650px;
   }
 
-  .desktop\:w-1\/2 {
-    width: 50%;
-  }
-
-  .desktop\:w-1\/4 {
-    width: 25%;
-  }
-
-  .desktop\:w-1\/5 {
-    width: 20%;
-  }
-
-  .desktop\:w-1\/6 {
-    width: 16.666667%;
-  }
-
   .desktop\:w-1\/12 {
     width: 8.333333%;
   }
 
-  .desktop\:w-2\/12 {
-    width: 16.666667%;
+  .desktop\:w-1\/2 {
+    width: 50%;
   }
 
   .desktop\:cursor-pointer {
@@ -918,6 +928,10 @@ video {
     place-items: start;
   }
 
+  .desktop\:justify-between {
+    justify-content: space-between;
+  }
+
   .desktop\:gap-7 {
     gap: 1.75rem;
   }
@@ -926,6 +940,10 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .desktop\:text-wrap {
+    text-wrap: wrap;
   }
 
   .desktop\:\!border-0 {
@@ -940,6 +958,10 @@ video {
     background-image: url(images/bg-pattern-intro-right-desktop.svg);
   }
 
+  .desktop\:bg-desktopHowWorkPattern {
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+  }
+
   .desktop\:bg-desktopImage {
     background-image: url(images/image-intro-desktop.jpg);
   }
@@ -948,33 +970,31 @@ video {
     background-size: contain;
   }
 
+  .desktop\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .desktop\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .desktop\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .desktop\:\!pt-0 {
+    padding-top: 0px !important;
   }
 
   .desktop\:pt-40 {
     padding-top: 10rem;
   }
 
-  .desktop\:pb-80 {
-    padding-bottom: 20rem;
-  }
-
-  .desktop\:pt-96 {
-    padding-top: 24rem;
-  }
-
-  .desktop\:pt-16 {
-    padding-top: 4rem;
-  }
-
   .desktop\:text-left {
     text-align: left;
-  }
-
-  .desktop\:text-start {
-    text-align: start;
   }
 
   .desktop\:text-\[4rem\] {
